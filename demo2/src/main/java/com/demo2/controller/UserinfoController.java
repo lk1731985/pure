@@ -91,4 +91,21 @@ public class UserinfoController {
         IPage result=userinfoService.page(page,lambdaQueryWrapper);
         return Result.suc(result.getRecords(),result.getTotal());
     }
+
+    @GetMapping("/xmltest")
+    public List<Userinfo> xmltest(){
+        return userinfoService.xmltest();
+    }
+
+    @GetMapping("/xmltest1")
+    public List<String> xmltest1(){
+        return userinfoService.xmltest1();
+    }
+
+    @GetMapping("/xmltest2")
+    public Result xmltest2(){
+        return Result.suc( userinfoService.xmltest2());
+
+    }
 }
+

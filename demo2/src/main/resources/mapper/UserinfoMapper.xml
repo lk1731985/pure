@@ -21,4 +21,15 @@
         id, name, age, sex, date, address, user_id, menu, password, update_time
     </sql>
 
+    <select id="xmltest" resultType="com.demo2.entity.Userinfo">
+        SELECT * FROM userinfo
+    </select>
+
+    <select id="xmltest1" resultType="string">
+        SELECT id FROM userinfo
+    </select>
+
+    <select id="xmltest2" resultType="string">
+        SELECT * FROM userinfo
+    </select>
 </mapper>
